@@ -1,9 +1,10 @@
 # Terminal
+Estas son notas de apoyo para mi curso
 
 ## CLI - Linea de comandos
 Aqui podemos darle instrucciones a la computadora mediante una serie de comandos específicos.
 
-1. Hey
+
 2. adios
     - Lista
     * no ordenada
