@@ -83,7 +83,7 @@
         valorIva = valor_startup * iva
 
         escribe valorPerCapita
-        escribe valorI  va
+        escribe valorIva
       Fin
     </pre>
 
@@ -96,7 +96,7 @@
         valorCompu = compu
         iva = .16
 
-        totalPagar = valorCompu * iva
+        totalPagar = valorCompu + ( valorCompu * iva)
 
         escribe totalPagar
 
@@ -109,7 +109,7 @@
         leer precio
         leer individuos
 
-        propina = .10
+        propina = 1.10
 
         pagoIndividual = precio / individuos
         pagoIndividualConPropina = pagoIndividual * propina
