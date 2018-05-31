@@ -97,8 +97,8 @@
 
         PrecioCompu = compu
         IVA = .16
-
-        TotalCompu = PrecioCompu * IVA
+        CompuIVA = PrecioCompu * IVA
+        TotalCompu = PrecioCompu + CompuIVA
 
         Escribre TotalCompu
 
@@ -111,8 +111,8 @@
         leer precio
         leer individuos
 
-        Propina = .10
-        PagoIndividual = precio / individuos
+        Propina = 1.10
+        PagoIndividual = precio/individuos
         PagoPropina= PagoIndividual * Propina
 
         Escribe PagoIndividual
