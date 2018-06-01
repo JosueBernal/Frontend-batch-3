@@ -119,5 +119,148 @@
 
       Fin
     </pre>
+
+    <!-- Ejercicios nivel 2 -->
+
+    <h3>Felicidad o hambre</h3>
+    <pre>
+      Inicio(hambre)
+        leer hambre
+
+        si hambre == true
+          escribe "Estoy triste"
+
+        sino
+          escribe "Estoy feliz"
+        fin-si
+      fin
+    </pre>
+
+    <h3>Nivel de videojuegos</h3>
+    <pre>
+      Inicio(nivel)
+        leer nivel
+
+        segun true sea
+          caso nivel => 10 && nivel < 20
+            player = "Acrobata"
+          fin-caso
+
+          caso nivel => 20
+            player = "ninja"
+
+          fin-caso
+          default
+            player = "noob"
+          fin-default
+
+        fin-Segun sea
+
+        escribe "player"
+      fin
+    </pre>
+
+    <h3>Acceso al refrigerador</h3>
+    <pre>
+        Inicio(nombre,contraseña)
+         leer nombre
+         leer contraseña
+
+          si nombre == Jonathan && contraseña == 23452
+            escribre "Come"
+
+          si no
+            escribre "no te robes comida"
+
+          fin-si
+
+        Fin
+    </pre>
+
+    <h3>Promedio</h3>
+    <pre>
+      Inicio(examen1,examen2,examen3)
+        leer examen1
+        leer examen2
+        leer examen3
+
+        promedio = (examen1 + examen2 + examen3) / 3
+
+        segun true sea
+          caso promedio => 8.5
+            premio = "escoger"
+          fin-caso
+
+          caso promedio < 6
+            premio = "hay castigo"
+          fin-caso
+
+          default
+            premio = "chido, no hay premio"
+          fin-defult
+        fin segun-sea
+
+        escribre premio
+
+      fin
+    </pre>
+
+    <h3>Clases</h3>
+    <pre>
+      Inicio(dia)
+        leer dia
+
+        segun true sea
+          caso dia == "Lunes"
+            clase == "Historia"
+          fin-caso
+
+          caso dia == "Martes"
+            clase == "Natación"
+          fin-caso
+
+          caso dia == "Miercoles"
+            clase == "Historia"
+          fin-caso
+
+          caso dia == "Jueves"
+            clase == "Esgrima"
+          fin-caso
+
+          default
+            clase == "No tienes clase"
+          fin-default
+        fin segunsea
+
+        escribe = clase
+      Fin
+    </pre>
+
+    <h3>Apuesta</h3>
+    <pre>
+      Inicio(shot1, shot2, shot3)
+        leer shot1
+        leer shot2
+        leer shot3
+
+        segun true sea
+          caso shot1 == shot2
+            escribe "gane"
+          fin-caso
+
+          caso shot1 == shot3
+            escribe "gane"
+          fin-caso
+
+          caso shot2 == shot3
+            escribe "Ganaste"
+          fin-caso
+
+          default
+            escribe "Perdiste"
+          fin-defult
+        fin segun sea
+      Fin
+    </pre>
   </body>
 </html>
