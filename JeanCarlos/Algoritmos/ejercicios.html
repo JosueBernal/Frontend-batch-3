@@ -13,10 +13,10 @@
         Leer dormir
         Leer despertar
 
-        Si despertar>dormir
-          HorasDormidas=despertar-dormir
-        Si despertar<dormir
-          HorasDormidas=(24-dormir)+despertar
+        Si despertar > dormir
+          HorasDormidas = despertar - dormir
+        Si despertar < dormir
+          HorasDormidas = (24 - dormir) + despertar
         Fin si
       Fin
     </pre>
@@ -28,12 +28,7 @@
         Leer Mantequilla
         Leer Queso
 
-        Pan=40
-        Yogurt=50
-        Mantequilla=45
-        Queso=90
-
-        TotalDeCompra=Pan+Yogurt+Mantequilla+Queso
+        TotalDeCompra = Pan + Yogurt + Mantequilla + Queso
       Fin
     </pre>
     <h2>Ejercicio de presupuesto</h2>
@@ -44,12 +39,7 @@
         Leer Comida
         Leer Pasajes
 
-        Freelancer=12000
-        Casa=4500
-        Comida=2000
-        Pasajes=200
-
-        PresupuestoFinal=Freelancer-(casa+comida+pasajes)
+        PresupuestoFinal = Freelancer - (casa + comida + pasajes)
       Fin
     </pre>
     <h2>Ejercicio de herencia</h2>
@@ -74,11 +64,8 @@
         Leer Empresa
         Leer IVA
 
-        Empresa=100000
-        IVA=0.17
-
-        PagoGanancia=(Empresa/2)*0.17
-        GananciaSocio=50000-PagoGanancia
+        PagoGanancia=(Empresa/2)*IVA
+        GananciaSocio=(Empresa/2)-PagoGanancia
       Fin
     </pre>
     <h2>Ejercicio de Compu de Diego</h2>
@@ -86,9 +73,6 @@
       Inicio (Computadora, IVA)
         Leer Computadora
         Leer IVA
-
-        Computadora=5000
-        IVA=0.17
 
         IVAComputadora=(Computadora)*IVA
         PrecioFinal=Computadora+IVAComputadora
@@ -99,9 +83,6 @@
       Inicio (Cuenta, Propina)
         Leer Cuenta
         Leer Propina
-
-        Cuenta=1200
-        Propina=0.10
 
         PropinaDeCuenta=Cuenta*Propina
         CuentaConPropina=Cuenta+PropinaDeCuenta
