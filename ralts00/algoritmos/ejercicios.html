@@ -12,9 +12,9 @@
         leer despertar
 
         si dormir > 12
-        horasDormidas = (24 - dormir) + despertar
+            horasDormidas = (24 - dormir) + despertar
         Sino
-        horasDormidas = despertar - dormir
+            horasDormidas = despertar - dormir
         fin-si
 
         Escribe horasDormidas
@@ -80,10 +80,10 @@
 
         valorPerCapita = valor_startup / 2
         iva = .16
-        valorIva = valor_startup * iva
+        valorIvaPerCapita = valorPerCapita * iva
+        valorFinal = valorPerCapita - valorIvaPerCapita
 
-        escribe valorPerCapita
-        escribe valorIva
+        escribe valorFinal
       Fin
     </pre>
 
