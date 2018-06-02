@@ -20,6 +20,7 @@
             Sino
             HorasDormidas = despertar - dormir
             Escribe HorasDormidas
+            Fin-SI
           Fin
       </pre>
 
@@ -104,44 +105,44 @@
 
       <h2>Ejercicio Felicidad o Hambre</h2>
       <pre>
-      Inicio (Hambre)
-        leer Hambre
-        SI Hambre Entonces
-          Escribe "Tengo hambre y estoy triste"
-        SINO
-          Escribe "Estoy Feliz"
-        Fin-SI
-      Fin
+        Inicio (Hambre)
+          leer Hambre
+          SI Hambre Entonces
+            Escribe "Tengo hambre y estoy triste"
+          SINO
+            Escribe "Estoy Feliz"
+          Fin-SI
+        Fin
       </pre>
 
       <h2>Ejercicio Nivel de Videojuegos</h2>
       <pre>
-      Inicio (nivel)
-        leer nivel
-        SI nivel < 10 Entonces
-          Escribe "Eres nivel Aprendiz"
-        SINO    10 <= nivel  and  nivel < 20
-          Escribe "Eres nivel Acrobata"
-        SINO
-          Escribe "Eres nivel ninja"
-        Fin-SI
-      Fin
+        Inicio (nivel)
+          leer nivel
+          SI nivel < 10 Entonces
+            Escribe "Eres nivel Aprendiz"
+          SINO    10 <= nivel  and  nivel < 20
+            Escribe "Eres nivel Acrobata"
+          SINO
+            Escribe "Eres nivel ninja"
+          Fin-SI
+        Fin
       </pre>
 
       <h2>Ejercicio Acceso al refrigerador</h2>
       <pre>
-      Inicio (nombre,contraseña)
-        leer nombre
-        leer contraseña
-        MiNombreOk = Antonio Ibarra
-        ContraseñaOK = 123456
-        SI nombre==MiNombreOK and Contraseña==ContraseñaOK Entonces
-          Escribe "Bienvenido Antonio Ibarra"
-          Abre Refrigerador
-        SINO
-          Escribe "Intenta de nuevo"
-        Fin-SI
-      Fin
+        Inicio (nombre,contraseña)
+          leer nombre
+          leer contraseña
+          MiNombreOk = Antonio Ibarra
+          ContraseñaOK = 123456
+          SI nombre==MiNombreOK and Contraseña==ContraseñaOK Entonces
+            Escribe "Bienvenido Antonio Ibarra"
+            Abre Refrigerador
+          SINO
+            Escribe "Intenta de nuevo"
+          Fin-SI
+        Fin
       </pre>
 
       <h2>Ejercicio Promedio</h2>
