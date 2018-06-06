@@ -144,9 +144,9 @@
                 leer individuos
 
                 precioPorcentaje = precio + (precio * .10)
-                precioIndividuo = precioPorcentaje / individuos
+                precioIndividual = precioPorcentaje / individuos
 
-                Escribe precioIndividuo
+                Escribe precioIndividual
             Fin
         </pre>
 
@@ -155,7 +155,7 @@
             Inicio(hambre)
                 leer hambre
 
-                Si hambre == false Entonces
+                Si hambre = false Entonces
                     Escribe "feliz"
                 Sino 
                     Escribe "triste"
@@ -226,16 +226,16 @@
                 leer horario
 
                 Segun horario Sea
-                    Caso lunes:
+                    Caso "Lunes":
                         Escribe "Voy a historia"
                     Fin-Caso
-                    Caso Miercoles:
+                    Caso "Miercoles":
                         Escribe "Voy a historia"
                     Fin-Caso
-                    Caso Martes: 
+                    Caso "Martes": 
                         Escribe "Voy a natación"
                     Fin-Caso
-                    Caso jueves:
+                    Caso "Jueves":
                         Escribe "Voy a esgrima"
                     Fin-Caso
                     default:
@@ -258,6 +258,7 @@
                     Fin-Caso
                     Caso shot1 = shot3:
                         Escribe "Ganaste"
+                    Fin-Caso
                     Caso shot2 = shot3:
                         Escribe "Ganaste"
                     Fin-Caso
@@ -265,6 +266,40 @@
                         Escribe "Perdiste"
                     Fin-Caso
                 Fin-Segun-Sea
+            Fin
+        </pre>
+
+        <h2>Ejercicio Regaño</h2>
+        <pre>
+            Inicio(num1, num2)
+
+                leer num1
+                leer num2
+
+                contador = num1
+
+                Mientras contador <= num2 Entonces 
+                    Escribe contador
+                    contador = contador + 1
+                Fin-Mientras
+
+            Fin
+        </pre>
+
+        <h2>Ejercicio Peso</h2>
+        <pre>
+            Inicio(peso, peso_ideal, cambio_de_peso)
+                leer peso
+                leer peso_ideal
+                leer cambio_de_peso
+
+                semanas = 0
+
+                Para contador = peso Hasta contador = peso_ideal Disminuye contador = contador - cambio_de_peso
+                    semanas = semanas + 1
+                Fin-Para
+
+                Escribe semanas
             Fin
         </pre>
     </body>
