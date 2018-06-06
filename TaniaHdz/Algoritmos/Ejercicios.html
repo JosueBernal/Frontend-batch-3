@@ -218,23 +218,19 @@
 
         segun true sea
 
-          caso día == lunes
-            resultado = "historia"
+          caso día == lunes or miércoles
+            Escribe "historia"
           fin-caso
 
           caso día == martes
-            resultado = "natación"
-          fin-caso
-
-          caso día == miércoles
-            resultado = "historia"
+            Escribe "natación"
           fin-caso
 
           caso día == jueves
-            resultado = "esgrima"
+            Escribe "esgrima"
 
           default
-            resultado = "día de descanso"
+            Escribe "día de descanso"
           fin-default
 
       Fin
@@ -269,6 +265,41 @@
 
     </pre>
 
+<!-- Inicio del terce ejercicio -->
+
+  <h2>Regaño</h2>
+  <pre>
+    Inicio(num1,num2)
+      leer num1
+      leer num2
+
+      Para contador = num1 Hasta contador >= num2 Aumenta contador = contador + 1
+        escribe contador
+      
+      fin-para
+
+    Fin
+  </pre>
+
+  <h2>Peso</h2>
+  <pre>
+    Inicio(peso, peso_ideal, cambio_de_peso)
+      leer peso
+      leer peso_ideal
+      leer cambio_de_peso
+
+      semanas = 0
+
+      Mientras peso > peso_ideal
+        peso = peso - cambio_de_peso
+        semanas = semana + 1
+      fin-mientras
+
+      Escribe semanas
+
+    Fin
+
+  </pre>
   </body>
   
 </html>
