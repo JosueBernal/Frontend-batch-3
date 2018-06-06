@@ -146,17 +146,21 @@
 
         segun true sea
 
-          caso nivel => 10 && nivel < 20
+          caso nivel >= 10 && nivel < 20
             player  = "Acrobata"
+              escribe "Acrobata"
           fin-caso
 
-          caso nivel => 20
+          caso nivel >= 20
             player = "Ninja"
+            escribe "Ninja"
           fin-caso
 
           default
             player = "Aprendiz"
+            escribe "Aprendiz"
           fin-default
+
 
         fin-segun sea
 
@@ -169,7 +173,7 @@
         leer nombre
         leer contraseña
 
-        si nombre == Tania && contraseña == Trickster
+        si nombre == "Tania" && contraseña == "Trickster"
           
           Escribe "Acceso Concedido"
 
