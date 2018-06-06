@@ -142,21 +142,21 @@
         leer nivel
 
         segun true sea
-          caso nivel => 10 && nivel < 20
-            player = "Acrobata"
+          caso nivel >= 10 && nivel < 20
+            range = "acrobata"
           fin-caso
 
-          caso nivel => 20
-            player = "ninja"
-
+          caso nivel >= 20
+            range = "ninja"
           fin-caso
+
           default
-            player = "noob"
+            range = "noob"
           fin-default
 
         fin-Segun sea
 
-        escribe "player"
+        escribe "Tu rango es: " range
       fin
     </pre>
 
@@ -260,6 +260,35 @@
             escribe "Perdiste"
           fin-defult
         fin segun sea
+      Fin
+    </pre>
+
+    <!-- Ejercicios nivel 3 -->
+
+    <h3>Regaño</h3>
+    <pre>
+        Inicio(num1, num2)
+          leer num1
+          leer num2
+
+          contador = num1
+
+          mientras contador <= num2 encontes
+            escribe contador
+            contador = contador + 1
+          fin mientras
+        Fin
+    </pre>
+
+    <h3>Peso</h3>
+    <pre>
+      Inicio(peso, peso_ideal, cambio_de_peso)
+        leer peso
+        leer peso_idea
+        leer cambio_de_peso
+
+        
+
       Fin
     </pre>
   </body>
